@@ -1,0 +1,4 @@
+# Project exclude paths
+/out/
+JavaCore22.iml
+.idea
