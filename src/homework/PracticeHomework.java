@@ -15,19 +15,11 @@ public class PracticeHomework {
     }
 
     boolean isSameNum(int a, int b) {
-        if (a != b) {
-            return false;
-        } else {
-            return true;
-        }
+        return a == b;
     }
 
     boolean lessThanOrEqualToZero(int number) {
-        if (number <= 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return number <= 0;
     }
 
     boolean reverseBool(boolean value) {
@@ -35,10 +27,6 @@ public class PracticeHomework {
     }
 
     int maxLength(int[] array1, int[] array2) {
-        if (array1.length > array2.length) {
-            return array1.length;
-        } else {
-            return array2.length;
-        }
+        return array1.length > array2.length ? array1.length : array2.length;
     }
 }
