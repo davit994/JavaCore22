@@ -13,13 +13,14 @@ public class ArraySpaceExample {
                 break;
             }
         }
-        for (int i = endIndex; i < 0; i--) {
-            if (spaceArray[startIndex] == ' ') {
-                startIndex--;
+        for (int i = endIndex; i > 0; i--) {
+            if (spaceArray[endIndex] == ' ') {
+                endIndex--;
             } else {
                 break;
             }
         }
+
         int length = endIndex - startIndex + 1;
         char[] result = new char[length];
         int index = 0;
