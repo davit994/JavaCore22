@@ -18,11 +18,7 @@ public class CharArrayExample {
         System.out.println(chars[l] + ", " + chars[o]);
 
         char[] chars3 = {'j', 'a', 'v', 'a', 'l', 'o', 'l', 'y' };
-        if (chars3[chars3.length - 2] == 'l' && chars3[chars3.length - 1] == 'y') {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
+        System.out.println(chars3[chars3.length - 2] == 'l' && chars3[chars3.length - 1] == 'y');
 
         char[] bobArray = {'b', 'a', 'o', 'l', 'b', 'a', 'b' };
         for (int i = 0; i < bobArray.length - 2; i++) {
