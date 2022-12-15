@@ -1,4 +1,4 @@
-package chapter3;
+package chapters.chapter3;
 
 public class ScopeErr {
     public static void main(String[] args) {

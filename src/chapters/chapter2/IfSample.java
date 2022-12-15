@@ -1,4 +1,4 @@
-package chapter2;
+package chapters.chapter2;
 
 public class IfSample {
     public static void main(String[] args) {
