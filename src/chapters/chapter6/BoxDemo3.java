@@ -3,8 +3,8 @@ package chapters.chapter6;
 public class BoxDemo3 {
     public static void main(String[] args) {
 
-        Box2 mybox1 = new Box2();
-        Box2 mybox2 = new Box2();
+        Box3 mybox1 = new Box3();
+        Box3 mybox2 = new Box3();
 
         mybox1.width = 10;
         mybox1.height = 20;
