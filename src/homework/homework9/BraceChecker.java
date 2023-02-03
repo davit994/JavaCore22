@@ -18,19 +18,25 @@ public class BraceChecker {
                 switch (c) {
                     case ')':
                         char p1 = stack.pop();
-                        if (p1 != '(') {
+                        if (p1 == ' ') {
+                            System.out.println("Error at " + i + " index Closed " + c + " but not open");
+                        } else if (p1 != '(') {
                             System.out.println("Error: opened " + p1 + " but closed " + c + " at " + i);
                         }
                         break;
                     case '}':
                         char p2 = stack.pop();
-                        if (p2 != '{') {
+                        if (p2 == ' ') {
+                            System.out.println("Error at " + i + " index Closed " + c + " but not open");
+                        } else if (p2 != '{') {
                             System.out.println("Error: opened " + p2 + " but closed " + c + " at " + i);
                         }
                         break;
                     case ']':
                         char p3 = stack.pop();
-                        if (p3 != '[') {
+                        if (p3 == ' ') {
+                            System.out.println("Error at " + i + " index Closed " + c + " but not open");
+                        } else if (p3 != '[') {
                             System.out.println("Error: opened " + p3 + " but closed " + c + " at " + i);
                         }
                         break;
@@ -38,7 +44,7 @@ public class BraceChecker {
             }
         }
         int s = stack.getSize();
-        if (s > 0) {
+        if (s >= 0) {
             System.out.println("Error. Some braces are not closed");
         }
     }
