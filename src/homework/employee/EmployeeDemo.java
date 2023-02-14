@@ -81,12 +81,12 @@ public class EmployeeDemo {
                 case "8":
                     System.out.println("please input ID");
                     String checkID = scanner.nextLine();
-                    employeeStorage.InactiveEmployeeByID(checkID);
+                    employeeStorage.inactiveEmployeeByID(checkID);
                     break;
                 case "9":
                     System.out.println("please input ID");
                     String searchID = scanner.nextLine();
-                    employeeStorage.ActivateEmployeeByID(searchID);
+                    employeeStorage.activateEmployeeByID(searchID);
                     break;
                 default:
                     System.out.println("Wrong command. Please try again");

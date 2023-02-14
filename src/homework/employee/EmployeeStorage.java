@@ -98,7 +98,7 @@ public class EmployeeStorage {
         }
     }
 
-    public void InactiveEmployeeByID(String checkID) {
+    public void inactiveEmployeeByID(String checkID) {
         boolean found = false;
         for (int i = 0; i < size; i++) {
             Employee employee = array[i];
@@ -112,7 +112,7 @@ public class EmployeeStorage {
         }
     }
 
-    public void ActivateEmployeeByID(String searchID) {
+    public void activateEmployeeByID(String searchID) {
         boolean found = false;
         for (int i = 0; i < size; i++) {
             Employee employee = array[i];
