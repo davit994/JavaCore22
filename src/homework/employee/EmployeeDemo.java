@@ -1,12 +1,16 @@
 package homework.employee;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class EmployeeDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
 
         Scanner scanner = new Scanner(System.in);
         EmployeeStorage employeeStorage = new EmployeeStorage();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
         boolean isRun = true;
         while (isRun) {
@@ -39,9 +43,13 @@ public class EmployeeDemo {
                     String company = scanner.nextLine();
                     System.out.println("please input position");
                     String position = scanner.nextLine();
+                    System.out.println("Please input date of birth in format dd/MM/yyyy");
+                    String dobStr = scanner.nextLine();
 
                     int salary = Integer.parseInt(salaryStr);
-                    Employee employee = new Employee(name, surname, employeeID, salary, company, position);
+                    Date dateOfBirth = sdf.parse(dobStr);
+                    Date date = new Date();
+                    Employee employee = new Employee(name, surname, employeeID, salary, company, position, date, dateOfBirth);
                     employee.setActive(true);
                     employeeStorage.add(employee);
                     System.out.println("employee was add");
