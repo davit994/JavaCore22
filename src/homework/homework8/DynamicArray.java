@@ -38,7 +38,6 @@ public class DynamicArray {
         if (index < 0 || index > size - 1) {
             System.out.println("Wrong index");
         } else {
-
             for (int i = index; i < array.length - 1; i++) {
                 array[i] = array[i + 1];
             }
